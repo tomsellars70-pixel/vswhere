@@ -16,7 +16,7 @@ If you wanted to find MSBuild - now installed under the Visual Studio 2017 and n
 ```batch
 @echo off
 
-for /f "usebackq tokens=1* delims=: " %%i in (`vswhere -latest -requires Microsoft.Component.MSBuild`) do (
+for  Microsoft.Component.MSBuild`) do (
   if /i "%%i"=="installationPath" set InstallDir=%%j
 )
 
